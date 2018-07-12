@@ -1,7 +1,7 @@
-FROM pensiero/apache-php:php7.0
+FROM leen15/apache-php:php71
 
 # Labels
-LABEL maintainer "oscar.fanelli@gmail.com"
+LABEL maintainer "luca@smartdomotik.com"
 
 # Mysql packages
 RUN apt update -q && apt install -yqq --force-yes \
