@@ -5,7 +5,7 @@ LABEL maintainer "luca@smartdomotik.com"
 
 # Mysql packages
 RUN apt update -q && apt install -yqq --force-yes \
-    php-mysql
+    php7.1-mysql
 
 # Start apache
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
